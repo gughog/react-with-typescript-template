@@ -29,16 +29,32 @@ module.exports = {
         extensions: ['.tsx'],
       },
     ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        'js': 'never',
+        'jsx': 'never',
+        'ts': 'never',
+        'tsx': 'never'
+      }
+    ],
+    'react/jsx-one-expression-per-line': 'error',
     'import/prefer-default-export': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-member-accessibility': 'off'
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/camelcase': 'off',
+    'react/prop-types': 0,
   },
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
-      typescript: {},
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        moduleDirectory: ['node_modules', 'src/'],
+      },
     },
   },
 };
