@@ -14,22 +14,19 @@ Just clone this repository with `git clone https://github.com/gughog/react-with-
 - Normal Dependencies:
   
 ```json
-  "@testing-library/jest-dom": "^4.2.4",
-  "@testing-library/react": "^9.3.2",
-  "@testing-library/user-event": "^7.1.2",
-  "@types/jest": "^24.0.0",
-  "@types/node": "^12.0.0",
-  "@types/react": "^16.9.0",
-  "@types/react-dom": "^16.9.0",
   "react": "^16.13.1",
   "react-dom": "^16.13.1",
-  "react-scripts": "3.4.1",
-  "typescript": "~3.7.2"
+  "react-scripts": "^3.4.3"
 ```
 
 - Development dependencies:
 
 ```json
+  "@commitlint/cli": "^9.1.2",
+  "@commitlint/config-conventional": "^11.0.0",
+  "@testing-library/jest-dom": "^4.2.4",
+  "@testing-library/react": "^9.3.2",
+  "@testing-library/user-event": "^7.1.2",
   "@typescript-eslint/eslint-plugin": "^2.31.0",
   "@typescript-eslint/parser": "^2.31.0",
   "eslint-config-airbnb": "^18.1.0",
@@ -37,8 +34,10 @@ Just clone this repository with `git clone https://github.com/gughog/react-with-
   "eslint-config-react-app": "^5.2.1",
   "eslint-import-resolver-typescript": "^2.0.0",
   "eslint-plugin-import": "^2.20.2",
-  "eslint-plugin-jsx-a11y": "^6.2.3",
+  "eslint-plugin-jsx-a11y": "^6.3.1",
   "eslint-plugin-prettier": "^3.1.3",
-  "eslint-plugin-react": "^7.19.0",
-  "prettier": "^2.0.5"
+  "eslint-plugin-react": "^7.20.3",
+  "husky": "^4.3.0",
+  "prettier": "^2.0.5",
+  "typescript": "~3.7.2"
 ```
