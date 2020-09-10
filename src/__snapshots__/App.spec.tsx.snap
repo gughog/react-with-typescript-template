@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Should match snapshot for App component 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    Hello, React!
+  </div>
+</DocumentFragment>
+`;

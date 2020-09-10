@@ -21,7 +21,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'import', 'jsx-a11y'],
+  plugins: ['react', 'import', 'jsx-a11y', '@typescript-eslint'],
   rules: {
     'react/jsx-filename-extension': [
       'error',
@@ -45,6 +45,9 @@ module.exports = {
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/camelcase': 'off',
     'react/prop-types': 0,
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true
+    }]
   },
   settings: {
     'import/parsers': {
@@ -57,4 +60,19 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: [
+        '**/*.test.js',
+        '**/*.test.jsx',
+        '**/*.test.tsx',
+        '**/*.spec.js',
+        '**/*.spec.jsx',
+        '**/*.spec.tsx',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
